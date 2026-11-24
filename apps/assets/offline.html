@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Eureka and Beyond</title>
+<style>
+  :root { color-scheme: light dark; --primary: #4169e1; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif; background: #f7f8fb; color: #1b2233; }
+  @media (prefers-color-scheme: dark) { body { background: #0f1422; color: #e6e9f2; } }
+  main { max-width: 26rem; padding: 2rem; text-align: center; }
+  img { width: 72px; height: 72px; }
+  h1 { font-size: 1.4rem; margin: 1rem 0 .5rem; }
+  p { margin: 0 0 1.25rem; opacity: .8; }
+  button { font: inherit; font-weight: 600; color: #fff; background: var(--primary); border: 0; border-radius: .6rem; padding: .7rem 1.4rem; min-height: 44px; cursor: pointer; }
+</style>
+</head>
+<body>
+<main>
+  <img src="icon.png" alt="" />
+  <h1 id="title">Opening Eureka and Beyond…</h1>
+  <p id="msg">Lessons, simulations and practice load from the internet.</p>
+  <button id="retry" hidden>Try again</button>
+</main>
+<script>
+  // The app shows the live site. This page is the launcher and the screen shown when the
+  // device is offline or the site can't be reached.
+  var APP_URL = "__APP_URL__";
+  var title = document.getElementById("title"), msg = document.getElementById("msg"), retry = document.getElementById("retry");
+  function offline() {
+    title.textContent = "You're offline";
+    msg.textContent = "Eureka and Beyond needs an internet connection to load lessons. Check your connection, then try again.";
+    retry.hidden = false;
+  }
+  function go() {
+    if (!navigator.onLine) return offline();
+    title.textContent = "Opening Eureka and Beyond…";
+    retry.hidden = true;
+    fetch(APP_URL + "/api/health", { cache: "no-store", mode: "no-cors" }).then(function () { location.replace(APP_URL); }, offline);
+  }
+  retry.addEventListener("click", go);
+  window.addEventListener("online", go);
+  go();
+</script>
+</body>
+</html>

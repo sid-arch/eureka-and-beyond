@@ -1,0 +1,23 @@
+[package]
+name = "eureka-and-beyond"
+version = "1.0.0"
+description = "Eureka and Beyond: free interactive mathematics, physics and chemistry"
+edition = "2021"
+publish = false
+
+[lib]
+name = "eureka_and_beyond_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+
+[profile.release]
+codegen-units = 1
+lto = true
+opt-level = "s"
+panic = "abort"
+strip = true

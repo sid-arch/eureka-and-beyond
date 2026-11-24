@@ -1,0 +1,14 @@
+{
+  "name": "eureka-and-beyond-desktop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Desktop apps (Tauri) for Eureka and Beyond: macOS .dmg and Windows .exe. See docs/APPS.md.",
+  "scripts": {
+    "prepare-web": "node ../scripts/prepare-web.mjs www",
+    "icons": "tauri icon ../assets/icon.png",
+    "build": "npm run prepare-web && tauri build"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0"
+  }
+}

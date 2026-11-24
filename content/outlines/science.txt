@@ -1,0 +1,524 @@
+# Curriculum outlines — Physics and Chemistry
+# AP Physics outlines follow the 2024–25 College Board unit structure
+# (AP Physics 1 Units 1–8, AP Physics 2 Units 9–15, AP Physics C: Mechanics
+# Units 1–7, AP Physics C: E&M Units 8–13). AP Chemistry follows Units 1–9.
+# Lesson-level sequencing is our own; alignment is unverified until reviewed.
+
+@course physics
+## measurement | Measurement and motion basics | Units, significant figures and describing motion.
+### measurement | Measurement
+- Units, measurement and significant figures => units-sig-figs
+- Scalars and vectors => scalars-vectors
+## kinematics | Kinematics | Describing motion in one and two dimensions.
+### one-dimension | Motion in one dimension
+- Position, displacement and velocity => position-velocity
+- Acceleration and motion graphs => acceleration-motion-graphs
+- Equations for constant acceleration => constant-acceleration-equations
+- Free fall => free-fall
+### two-dimensions | Motion in two dimensions
+- Vector components => vector-components-physics
+- Projectile motion => projectile-motion
+## forces | Forces and Newton's laws | How forces change motion.
+### newtons-laws | Newton's laws
+- Newton's first law and inertia => newtons-first-law
+- Newton's second law => newtons-second-law
+- Newton's third law => newtons-third-law
+### applying-forces | Applying Newton's laws
+- Free-body diagrams => free-body-diagrams
+- Friction => friction-forces
+- Forces on inclines => forces-on-inclines
+## circular-gravity | Circular motion and gravitation | Centripetal acceleration and universal gravitation.
+### circular | Circular motion
+- Uniform circular motion => uniform-circular-motion
+- Universal gravitation and orbits => gravitation-orbits
+## energy | Work, energy and power | Energy transfer and conservation.
+### energy | Energy
+- Work => work-physics
+- Kinetic and potential energy => kinetic-potential-energy
+- Conservation of mechanical energy => conservation-mechanical-energy
+- Power => power-physics
+## momentum | Momentum | Impulse and collisions.
+### momentum | Momentum
+- Momentum and impulse => momentum-impulse
+- Conservation of momentum in collisions => momentum-conservation
+## waves | Waves and sound | Properties of mechanical waves.
+### waves | Waves
+- Simple harmonic motion => simple-harmonic-motion
+- Properties of waves => properties-of-waves
+- Sound and the Doppler effect => sound-doppler
+- Standing waves and resonance => standing-waves-resonance
+## light | Light and optics | Reflection, refraction and the electromagnetic spectrum.
+### light | Light
+- The electromagnetic spectrum => electromagnetic-spectrum
+- Reflection and mirrors => reflection-mirrors
+- Refraction and lenses => refraction-lenses
+## electricity | Electricity and circuits | Charge, current, resistance and circuits.
+### electrostatics | Electrostatics
+- Electric charge and Coulomb's law => coulombs-law
+- Electric fields => electric-fields
+### circuits | Circuits
+- Current, voltage and resistance (Ohm's law) => ohms-law
+- Series and parallel circuits => series-parallel-circuits
+- Electric power and energy => electric-power-energy
+## magnetism | Magnetism | Magnetic fields and electromagnetic induction.
+### magnetism | Magnetism
+- Magnetic fields and forces => magnetic-fields-forces
+- Electromagnetic induction => electromagnetic-induction
+
+@course physics-honors extends physics
+## kinematics | Kinematics | Describing motion in one and two dimensions.
+### two-dimensions | Motion in two dimensions
+- Relative velocity => relative-velocity
+## forces | Forces and Newton's laws | How forces change motion.
+### applying-forces | Applying Newton's laws
+- Connected objects and pulleys => connected-objects-pulleys
+## rotation | Rotational motion | Torque, rotational inertia and angular momentum.
+### rotation | Rotation
+- Rotational kinematics => rotational-kinematics
+- Torque and static equilibrium => torque-equilibrium
+- Rotational inertia and angular momentum => rotational-inertia-angular-momentum
+## fluids | Fluids | Pressure, buoyancy and fluid flow.
+### fluids | Fluids
+- Density and pressure => density-pressure
+- Buoyancy and Archimedes' principle => buoyancy-archimedes
+- Fluid flow and Bernoulli's equation => fluid-flow-bernoulli
+## thermal | Thermal physics | Temperature, heat and the laws of thermodynamics.
+### thermal | Thermal physics
+- Temperature and thermal energy => temperature-thermal-energy
+- Specific heat and phase changes => specific-heat-phase-changes
+- Laws of thermodynamics => laws-of-thermodynamics
+## modern | Modern physics | Quantum and nuclear ideas.
+### modern | Modern physics
+- The photoelectric effect => photoelectric-effect
+- Nuclear decay and half-life => nuclear-decay-half-life
+
+@course ap-physics-1
+## unit-1 | Unit 1: Kinematics | Motion in one and two dimensions.
+### kinematics-1d | Motion in one dimension
+- Scalars and vectors in one dimension => scalars-vectors
+- Displacement, velocity and acceleration => position-velocity
+- Representing motion => acceleration-motion-graphs
+### kinematics-2d | Reference frames and two-dimensional motion
+- Reference frames and relative motion => relative-velocity
+- Vectors and motion in two dimensions => vector-components-physics
+- Projectile motion => projectile-motion
+## unit-2 | Unit 2: Force and translational dynamics | Systems, forces and Newton's laws.
+### forces | Forces
+- Systems and center of mass => systems-center-of-mass
+- Forces and free-body diagrams => free-body-diagrams
+- Newton's third law => newtons-third-law
+- Newton's first law => newtons-first-law
+- Newton's second law => newtons-second-law
+### force-types | Types of forces
+- Gravitational force => gravitation-orbits
+- Kinetic and static friction => friction-forces
+- Spring forces => spring-forces
+- Circular motion => uniform-circular-motion
+## unit-3 | Unit 3: Work, energy and power | Energy in systems and its transfer.
+### energy | Energy
+- Translational kinetic energy => kinetic-potential-energy
+- Work => work-physics
+- Potential energy => potential-energy-systems
+- Conservation of energy => conservation-mechanical-energy
+- Power => power-physics
+## unit-4 | Unit 4: Linear momentum | Impulse, momentum and collisions.
+### momentum | Momentum
+- Linear momentum => momentum-vectors-systems
+- Change in momentum and impulse => momentum-impulse
+- Conservation of linear momentum => momentum-conservation
+- Elastic and inelastic collisions => elastic-inelastic-collisions
+## unit-5 | Unit 5: Torque and rotational dynamics | Rotational kinematics, torque and rotational inertia.
+### rotation | Rotational dynamics
+- Rotational kinematics => rotational-kinematics
+- Connecting linear and rotational motion => connecting-linear-rotational
+- Torque => torque-equilibrium
+- Rotational inertia => rotational-inertia-angular-momentum
+- Rotational equilibrium and Newton's first law in rotational form => rotational-equilibrium
+- Newton's second law in rotational form => rotational-second-law
+## unit-6 | Unit 6: Energy and momentum of rotating systems | Rotational energy and angular momentum.
+### rotating-systems | Rotating systems
+- Rotational kinetic energy => rotational-kinetic-energy-work
+- Torque and work => torque-work-power
+- Angular momentum and angular impulse => angular-momentum-impulse
+- Conservation of angular momentum => conservation-angular-momentum
+- Rolling => rolling-motion
+- Motion of orbiting satellites => orbiting-satellites
+## unit-7 | Unit 7: Oscillations | Simple harmonic motion.
+### shm | Simple harmonic motion
+- Defining simple harmonic motion => simple-harmonic-motion
+- Frequency and period of SHM => pendulum-period
+- Representing and analyzing SHM => shm-graphs-analysis
+- Energy of simple harmonic oscillators => shm-energy
+## unit-8 | Unit 8: Fluids | Pressure, buoyancy and fluid flow.
+### fluids | Fluids
+- Internal structure and density => internal-structure-density
+- Pressure => density-pressure
+- Fluids and Newton's laws => buoyancy-archimedes
+- Fluids and conservation laws => fluid-flow-bernoulli
+
+@course ap-physics-2
+## unit-9 | Unit 9: Thermodynamics | Kinetic theory, heat transfer and the laws of thermodynamics.
+### thermo | Thermodynamics
+- Kinetic theory of temperature and pressure => kinetic-theory
+- The ideal gas law => ideal-gas-law
+- Thermal energy transfer and equilibrium => temperature-thermal-energy
+- The first law of thermodynamics => laws-of-thermodynamics
+- Specific heat and thermal conductivity => thermal-conductivity
+- Entropy and the second law of thermodynamics => entropy-second-law
+## unit-10 | Unit 10: Electric force, field and potential | Charge, Coulomb's law, fields and potential.
+### electrostatics | Electrostatics
+- Electric charge and electric force => coulombs-law
+- Conservation of charge and charging processes => charging-processes
+- Electric fields => electric-fields
+- Electric potential energy => electric-potential-energy
+- Electric potential => electric-potential
+- Capacitors => capacitors
+- Conservation of electric energy => conservation-electric-energy
+## unit-11 | Unit 11: Electric circuits | DC and RC circuits.
+### circuits | Circuits
+- Electric current => ohms-law
+- Simple circuits => simple-circuits-emf
+- Resistance, resistivity and Ohm's law => series-parallel-circuits
+- Electric power => electric-power-energy
+- Compound direct current circuits => compound-circuits
+- Kirchhoff's loop rule => kirchhoff-loop-rule
+- Kirchhoff's junction rule and conservation of charge => kirchhoff-junction-rule
+- Resistor-capacitor (RC) circuits => rc-circuits
+## unit-12 | Unit 12: Magnetism and electromagnetism | Magnetic fields, forces and induction.
+### magnetism | Magnetism
+- Magnetic systems => magnetic-systems
+- Magnetic permeability => magnetic-permeability
+- Magnetic fields from moving charges => magnetic-fields-moving-charges
+- Magnetic fields and forces on currents => magnetic-fields-forces
+- Magnetic flux => magnetic-flux
+- Electromagnetic induction => electromagnetic-induction
+## unit-13 | Unit 13: Geometric optics | Reflection, refraction, mirrors and lenses.
+### optics | Geometric optics
+- Reflection => law-of-reflection
+- Images formed by mirrors => reflection-mirrors
+- Refraction => snells-law-refraction
+- Images formed by lenses => refraction-lenses
+## unit-14 | Unit 14: Waves, sound and physical optics | Mechanical waves, sound and wave behavior of light.
+### waves | Waves
+- Properties of wave pulses and waves => wave-pulses
+- Periodic waves => properties-of-waves
+- Boundary behavior of waves and polarization => boundary-behavior-polarization
+- Electromagnetic waves => electromagnetic-spectrum
+- The Doppler effect => sound-doppler
+- Wave interference and standing waves => standing-waves-resonance
+- Diffraction and double-slit interference => diffraction-double-slit
+- Thin-film interference => thin-film-interference
+## unit-15 | Unit 15: Modern physics | Quantum, atomic and nuclear physics.
+### modern | Modern physics
+- Quantum theory and wave-particle duality => wave-particle-duality
+- Energy in modern physics => atomic-energy-levels
+- Mass-energy equivalence => mass-energy-equivalence
+- Properties of atomic nuclei => atomic-nuclei
+- Nuclear decay => nuclear-decay-half-life
+- Types of radioactive decay => types-radioactive-decay
+- Blackbody radiation and the photoelectric effect => photoelectric-effect
+- Compton scattering => compton-scattering
+- Fission, fusion and nuclear excitation => fission-fusion
+
+@course ap-physics-c-mechanics
+## unit-1 | Unit 1: Kinematics | Calculus-based description of motion.
+### kinematics | Kinematics with calculus
+- Scalars and vectors in one dimension => calc-vectors-1d
+- Displacement, velocity and acceleration as derivatives => calc-kinematics-derivatives
+- Representing motion with integrals and graphs => calc-kinematics-integrals
+- Reference frames and relative motion => relative-velocity
+- Vectors and motion in two dimensions => calc-motion-2d
+## unit-2 | Unit 2: Force and translational dynamics | Newton's laws, including variable forces.
+### dynamics | Dynamics
+- Systems and center of mass => calc-center-of-mass
+- Forces and free-body diagrams => free-body-diagrams
+- Newton's first and third laws => calc-first-third-laws
+- Newton's second law => calc-newtons-second-law
+- Gravitational force => calc-gravitational-force
+- Kinetic and static friction => calc-friction
+- Spring forces => calc-spring-forces
+- Resistive forces and terminal velocity => resistive-forces-terminal-velocity
+- Circular motion => calc-circular-motion
+## unit-3 | Unit 3: Work, energy and power | Work as an integral and energy conservation.
+### energy | Energy
+- Translational kinetic energy => calc-work-energy-theorem
+- Work done by variable forces => calc-work-variable-forces
+- Potential energy and conservative forces => calc-potential-energy
+- Conservation of energy => calc-conservation-energy
+- Power => calc-power
+## unit-4 | Unit 4: Linear momentum | Impulse integrals and collisions.
+### momentum | Momentum
+- Linear momentum => calc-linear-momentum
+- Change in momentum and impulse => calc-impulse
+- Conservation of linear momentum => calc-momentum-conservation
+- Elastic and inelastic collisions => calc-collisions
+## unit-5 | Unit 5: Torque and rotational dynamics | Rotational kinematics and moments of inertia.
+### rotation | Rotation
+- Rotational kinematics => calc-rotational-kinematics
+- Connecting linear and rotational motion => calc-connecting-linear-rotational
+- Torque => torque-cross-product
+- Rotational inertia by integration => rotational-inertia-integration
+- Rotational equilibrium => rotational-equilibrium
+- Newton's second law in rotational form => calc-rotational-second-law
+## unit-6 | Unit 6: Energy and momentum of rotating systems | Rotational energy, angular momentum and rolling.
+### rotating | Rotating systems
+- Rotational kinetic energy => calc-rotational-energy
+- Torque and work => calc-torque-work
+- Angular momentum and angular impulse => calc-angular-momentum
+- Conservation of angular momentum => calc-angular-momentum-conservation
+- Rolling => calc-rolling
+- Motion of orbiting satellites => calc-orbits-escape
+## unit-7 | Unit 7: Oscillations | Simple harmonic motion and the differential equation behind it.
+### oscillations | Oscillations
+- Defining simple harmonic motion => shm-differential-equation
+- Frequency and period of SHM => calc-shm-period
+- Representing and analyzing SHM => calc-shm-representing
+- Energy of simple harmonic oscillators => calc-shm-energy
+- Simple and physical pendulums => physical-pendulum
+
+@course ap-physics-c-electricity-and-magnetism
+## unit-8 | Unit 8: Electric charges, fields and Gauss's law | Fields from charge distributions.
+### fields | Electric fields
+- Electric charge and electric force => em-coulomb-vectors
+- Conservation of electric charge => charging-processes
+- Electric fields of point charges and continuous distributions => em-continuous-distributions
+- Electric flux => em-electric-flux
+- Gauss's law => em-gauss-law
+## unit-9 | Unit 9: Electric potential | Potential, potential energy and the field connection.
+### potential | Potential
+- Electric potential energy => em-potential-energy
+- Electric potential => em-potential-integral
+- Electric potential and electric field => em-potential-field
+- Conservation of electric energy => em-energy-conservation
+## unit-10 | Unit 10: Conductors and capacitors | Charge on conductors and capacitance.
+### capacitance | Conductors and capacitors
+- Electrostatics with conductors => em-conductors
+- Redistribution of charge between conductors => em-charge-redistribution
+- Capacitors and capacitance => em-capacitance-calculus
+- Dielectrics => em-dielectrics
+## unit-11 | Unit 11: Electric circuits | Current, resistance and RC circuits with calculus.
+### circuits | Circuits
+- Electric current => em-current-density
+- Simple circuits => simple-circuits-emf
+- Resistance, resistivity and Ohm's law => em-resistivity
+- Electric power => electric-power-energy
+- Compound direct current circuits => compound-circuits
+- Kirchhoff's rules => kirchhoff-junction-rule
+- Resistor-capacitor (RC) circuits => em-rc-calculus
+## unit-12 | Unit 12: Magnetic fields and electromagnetism | Fields from currents and forces on moving charges.
+### magnetic-fields | Magnetic fields
+- Magnetic fields and forces on moving charges => em-magnetic-force-vectors
+- Magnetic fields of current-carrying wires and the Biot–Savart law => em-biot-savart
+- Ampère's law => em-ampere-law
+## unit-13 | Unit 13: Electromagnetic induction | Faraday's law, inductance and LR circuits.
+### induction | Induction
+- Magnetic flux => em-magnetic-flux-calculus
+- Faraday's law and Lenz's law => em-faraday-lenz
+- Induced currents and magnetic forces => em-induced-forces
+- Inductance => em-inductance
+- Circuits with resistors and inductors (LR circuits) => em-lr-circuits
+- Circuits with capacitors and inductors (LC circuits) => em-lc-circuits
+
+@course chemistry
+## matter-measurement | Matter and measurement | Classifying matter and making quantitative measurements.
+### matter | Matter and measurement
+- Classifying matter => classifying-matter
+- Physical and chemical changes => physical-chemical-changes
+- Measurement, significant figures and unit conversion => chem-measurement
+## atomic-structure | Atomic structure | Atoms, isotopes and electron arrangement.
+### atoms | Atoms
+- Atomic theory and subatomic particles => atomic-theory
+- Isotopes and average atomic mass => isotopes-atomic-mass
+### electrons | Electrons
+- Light and atomic emission spectra => emission-spectra-chem
+- Electron configurations => electron-configurations
+## periodic-table | The periodic table | Organization of the elements and periodic trends.
+### periodicity | Periodicity
+- Organization of the periodic table => periodic-table-organization
+- Periodic trends => periodic-trends
+## bonding | Chemical bonding | Ionic, covalent and metallic bonding and molecular shape.
+### bonds | Bonds
+- Ionic bonding and ionic compounds => ionic-bonding
+- Covalent bonding and Lewis structures => covalent-lewis
+- Molecular geometry (VSEPR) => molecular-geometry-vsepr
+- Polarity and intermolecular forces => polarity-imfs
+## nomenclature | Names and formulas | Naming compounds and writing formulas.
+### naming | Naming
+- Naming ionic compounds => naming-ionic-compounds
+- Naming molecular compounds and acids => naming-molecular-acids
+## reactions | Chemical reactions | Equations and reaction types.
+### equations | Chemical equations
+- Writing and balancing chemical equations => balancing-equations
+- Types of chemical reactions => reaction-types
+## mole-stoichiometry | The mole and stoichiometry | Counting particles and reaction quantities.
+### mole | The mole
+- The mole and molar mass => mole-molar-mass
+- Percent composition and empirical formulas => percent-composition-empirical
+### stoichiometry | Stoichiometry
+- Mole ratios and stoichiometry => mole-ratio-stoichiometry
+- Limiting reactant and percent yield => limiting-reactant
+## gases | Gases | Gas behavior and the gas laws.
+### gas-laws | Gas laws
+- Kinetic molecular theory => kmt-chemistry
+- Pressure and the gas laws => pressure-gas-laws
+- The ideal gas law => ideal-gas-law
+## solutions | Solutions | Concentration and properties of solutions.
+### solutions | Solutions
+- Solubility and the dissolving process => solubility-dissolving
+- Molarity and dilution => molarity-dilution
+## thermochemistry | Thermochemistry | Energy changes in reactions.
+### energy | Energy and reactions
+- Energy, heat and specific heat => energy-heat-chem
+- Enthalpy and calorimetry => enthalpy-calorimetry
+## rates-equilibrium | Reaction rates and equilibrium | How fast and how far reactions go.
+### rates | Rates and equilibrium
+- Collision theory and reaction rates => collision-theory-rates
+- Chemical equilibrium and Le Châtelier's principle => equilibrium-le-chatelier
+## acids-bases | Acids and bases | Acid-base definitions and pH.
+### acids | Acids and bases
+- Properties and definitions of acids and bases => acids-bases-definitions
+- pH and pOH => ph-poh
+- Neutralization and titration => neutralization-titration
+## nuclear | Nuclear chemistry | Radioactivity and nuclear reactions.
+### nuclear | Nuclear chemistry
+- Radioactive decay => types-radioactive-decay
+- Half-life => nuclear-decay-half-life
+
+@course chemistry-honors extends chemistry
+## atomic-structure | Atomic structure | Atoms, isotopes and electron arrangement.
+### electrons | Electrons
+- Quantum numbers and orbitals => quantum-numbers-orbitals
+## bonding | Chemical bonding | Ionic, covalent and metallic bonding and molecular shape.
+### bonds | Bonds
+- Hybridization and resonance => hybridization-resonance
+## gases | Gases | Gas behavior and the gas laws.
+### gas-laws | Gas laws
+- Dalton's law and gas stoichiometry => daltons-law-gas-stoichiometry
+## solutions | Solutions | Concentration and properties of solutions.
+### solutions | Solutions
+- Colligative properties => colligative-properties
+## thermochemistry | Thermochemistry | Energy changes in reactions.
+### energy | Energy and reactions
+- Hess's law and enthalpies of formation => hess-law-formation
+## rates-equilibrium | Reaction rates and equilibrium | How fast and how far reactions go.
+### rates | Rates and equilibrium
+- Rate laws => rate-laws
+- Equilibrium constants and ICE tables => ice-tables
+## acids-bases | Acids and bases | Acid-base definitions and pH.
+### acids | Acids and bases
+- Weak acids, weak bases and Ka => weak-acids-ka
+- Buffers => buffers
+## electrochemistry | Electrochemistry | Oxidation, reduction and electrochemical cells.
+### redox | Redox
+- Oxidation numbers and redox reactions => oxidation-numbers-redox
+- Galvanic cells => galvanic-cells
+
+@course ap-chemistry
+## unit-1 | Unit 1: Atomic structure and properties | Moles, mass spectra, electron configuration and periodic trends.
+### moles | Moles and composition
+- Moles and molar mass => mole-molar-mass
+- Mass spectroscopy of elements => mass-spectroscopy
+- Elemental composition of pure substances => percent-composition-empirical
+- Composition of mixtures => composition-mixtures
+### structure | Atomic structure
+- Atomic structure and electron configuration => electron-configurations
+- Photoelectron spectroscopy => photoelectron-spectroscopy
+- Periodic trends => periodic-trends
+- Valence electrons and ionic compounds => ionic-bonding
+## unit-2 | Unit 2: Compound structure and properties | Bonding, Lewis diagrams and molecular shape.
+### bonding | Bonding
+- Types of chemical bonds => types-chemical-bonds
+- Intramolecular force and potential energy => bond-potential-energy
+- Structure of ionic solids => ionic-solids-structure
+- Structure of metals and alloys => metals-alloys
+### lewis | Lewis structures and shape
+- Lewis diagrams => covalent-lewis
+- Resonance and formal charge => formal-charge
+- VSEPR and hybridization => hybridization-resonance
+## unit-3 | Unit 3: Properties of substances and mixtures | Intermolecular forces, gases and solutions.
+### imf | Intermolecular forces and states
+- Intermolecular and interparticle forces => polarity-imfs
+- Properties of solids => properties-of-solids
+- Solids, liquids and gases => states-phase-diagrams
+- Ideal gas law => ideal-gas-law
+- Kinetic molecular theory => kmt-chemistry
+- Deviation from ideal gas law => real-gases
+### solutions | Solutions and separation
+- Solutions and mixtures => molarity-dilution
+- Representations of solutions => representations-solutions
+- Separation of solutions and mixtures; chromatography => chromatography-separation
+- Solubility => solubility-dissolving
+- Spectroscopy and the electromagnetic spectrum => spectroscopy-em
+- Beer–Lambert law => beer-lambert-law
+## unit-4 | Unit 4: Chemical reactions | Reaction representations, stoichiometry and reaction types.
+### reactions | Reactions
+- Introduction for reactions => reactions-particulate
+- Net ionic equations => net-ionic-equations
+- Representations of reactions => balancing-equations
+- Physical and chemical changes => physical-chemical-changes
+- Stoichiometry => limiting-reactant
+- Introduction to titration => neutralization-titration
+- Types of chemical reactions => reaction-types
+- Introduction to acid-base reactions => acids-bases-definitions
+- Oxidation-reduction (redox) reactions => oxidation-numbers-redox
+## unit-5 | Unit 5: Kinetics | Rate laws, mechanisms and catalysis.
+### kinetics | Kinetics
+- Reaction rates => collision-theory-rates
+- Introduction to rate law => rate-laws
+- Concentration changes over time => concentration-over-time
+- Elementary reactions and collision model => elementary-reactions
+- Reaction energy profile => reaction-energy-profile
+- Introduction to reaction mechanisms => reaction-mechanisms
+- Multistep reaction energy profile => multistep-energy-profile
+- Catalysis => catalysis
+## unit-6 | Unit 6: Thermochemistry | Energy changes, enthalpy and calorimetry.
+### thermochemistry | Thermochemistry
+- Endothermic and exothermic processes => energy-heat-chem
+- Energy diagrams => energy-diagrams
+- Heat transfer and thermal equilibrium => thermal-equilibrium-chem
+- Heat capacity and calorimetry => enthalpy-calorimetry
+- Energy of phase changes => phase-change-energy
+- Introduction to enthalpy of reaction => enthalpy-of-reaction
+- Bond enthalpies => bond-enthalpies
+- Enthalpy of formation => enthalpy-of-formation
+- Hess's law => hess-law-formation
+## unit-7 | Unit 7: Equilibrium | Equilibrium constants, Le Châtelier and solubility.
+### equilibrium | Equilibrium
+- Introduction to equilibrium => intro-equilibrium
+- Direction of reversible reactions => direction-reversible
+- Reaction quotient and equilibrium constant => reaction-quotient
+- Calculating the equilibrium constant => calculating-k
+- Magnitude of the equilibrium constant => magnitude-of-k
+- Properties of the equilibrium constant => properties-of-k
+- Calculating equilibrium concentrations => ice-tables
+- Introduction to Le Châtelier's principle => equilibrium-le-chatelier
+- Reaction quotient and Le Châtelier's principle => q-le-chatelier
+- Introduction to solubility equilibria => solubility-equilibria
+- Common-ion effect => common-ion-effect
+- pH and solubility => ph-solubility
+- Free energy of dissolution => free-energy-dissolution
+## unit-8 | Unit 8: Acids and bases | pH, weak acids, buffers and titrations.
+### acids-bases | Acids and bases
+- Introduction to acids and bases => ph-poh
+- pH and pOH of strong acids and bases => strong-acid-base-ph
+- Weak acid and base equilibria => weak-acids-ka
+- Acid-base reactions and buffers => buffers
+- Acid-base titrations => ap-acid-base-titrations
+- Molecular structure of acids and bases => acid-strength-structure
+- pH and pKa => ph-and-pka
+- Properties of buffers => buffer-properties
+- Henderson–Hasselbalch equation => henderson-hasselbalch
+- Buffer capacity => buffer-capacity
+## unit-9 | Unit 9: Applications of thermodynamics | Entropy, free energy and electrochemistry.
+### thermodynamics | Entropy and free energy
+- Introduction to entropy => intro-entropy
+- Absolute entropy and entropy change => absolute-entropy
+- Gibbs free energy and thermodynamic favorability => gibbs-free-energy
+- Thermodynamic and kinetic control => thermo-kinetic-control
+- Free energy and equilibrium => free-energy-equilibrium
+- Coupled reactions => coupled-reactions
+### electrochemistry | Electrochemistry
+- Galvanic (voltaic) and electrolytic cells => galvanic-cells
+- Cell potential and free energy => cell-potential-free-energy
+- Cell potential under nonstandard conditions => nernst-equation
+- Electrolysis and Faraday's law => electrolysis-faraday

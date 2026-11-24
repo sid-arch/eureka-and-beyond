@@ -1,0 +1,355 @@
+# Curriculum outlines — Mathematics (part 1)
+#
+# Format
+#   @course <course-slug> [extends <course-slug>]
+#   ## <unit-slug> | <Unit title> | <one-sentence summary>
+#   ### <chapter-slug> | <Chapter title>
+#   - <Lesson title> [=> <lesson-slug> when the lesson is written]
+#
+# A course that "extends" another starts from a copy of its outline. Units and
+# chapters with the same slug are extended (lessons appended); new slugs are added.
+# These outlines are original sequencing based on commonly taught content; they
+# are not claimed to match any specific state or district standard.
+
+@course algebra-readiness
+## number-sense | Number sense and operations | Fluency with integers, fractions, decimals and the order of operations.
+### integers | Integers and rational numbers
+- Integers and the number line => integers-number-line
+- Adding and subtracting integers => adding-subtracting-integers
+- Multiplying and dividing integers => multiplying-dividing-integers
+- Rational numbers and their decimal forms => rational-numbers-decimals
+### fractions-decimals | Fractions, decimals and percents
+- Operations with fractions => operations-with-fractions
+- Operations with decimals => operations-with-decimals
+- Converting between fractions, decimals and percents => fractions-decimals-percents
+### order-of-operations | Order of operations
+- Exponents and square roots => exponents-square-roots
+- The order of operations => order-of-operations
+## ratios-proportions | Ratios, rates and proportions | Comparing quantities with ratios and solving proportional problems.
+### ratios | Ratios and rates
+- Ratios and equivalent ratios => ratios-equivalent-ratios
+- Unit rates and unit pricing => unit-rates
+### proportions | Proportional relationships
+- Solving proportions => solving-proportions
+- Percent problems: tax, discount and percent change => percent-problems
+- Scale drawings and maps => scale-drawings
+## expressions | Expressions | Writing, simplifying and evaluating algebraic expressions.
+### variables | Variables and expressions
+- Variables and algebraic expressions => variables-and-expressions
+- Evaluating expressions => evaluating-expressions
+### properties | Properties and simplifying
+- The distributive property => distributive-property
+- Combining like terms => combining-like-terms
+## equations-inequalities | Equations and inequalities | Solving one-variable equations and inequalities.
+### one-variable-equations | One-variable equations
+- One-step equations => one-step-equations
+- Two-step equations => solving-two-step-equations
+- Equations with variables on both sides => equations-variables-both-sides
+### inequalities | Inequalities
+- Writing and graphing inequalities => writing-graphing-inequalities
+- Solving one-step and two-step inequalities => solving-simple-inequalities
+## coordinate-plane | The coordinate plane | Plotting points and reading relationships from graphs and tables.
+### graphing | Graphing in four quadrants
+- Plotting points in all four quadrants => plotting-points-four-quadrants
+- Tables, graphs and patterns => tables-graphs-patterns
+- Introduction to slope as a rate of change => slope-and-rate-of-change
+## geometry-data | Geometry and data foundations | Area, volume and summarizing data.
+### measurement | Area and volume
+- Area of triangles, quadrilaterals and circles => area-2d-shapes
+- Volume of prisms and cylinders => volume-prisms-cylinders
+### data | Data and statistics
+- Mean, median, mode and range => mean-median-mode-range
+- Displaying data => displaying-data
+
+@course algebra-1
+## foundations | Foundations of algebra | The language of algebra: expressions, properties and real numbers.
+### real-numbers | Real numbers
+- Classifying real numbers => classifying-real-numbers
+- Properties of real numbers => properties-real-numbers
+### expressions | Expressions
+- Variables and algebraic expressions => variables-and-expressions
+- Simplifying expressions => simplifying-expressions
+## linear-equations | Linear equations and inequalities | Solving equations and inequalities in one variable and checking solutions.
+### solving-equations | Solving equations
+- Solving two-step equations => solving-two-step-equations
+- Equations with variables on both sides => equations-variables-both-sides
+- Literal equations and formulas => literal-equations
+### inequalities | Inequalities
+- Solving linear inequalities => solving-linear-inequalities
+- Compound inequalities => compound-inequalities
+- Absolute value equations and inequalities => absolute-value-equations-inequalities
+## functions | Functions | Relations, function notation, domain and range.
+### function-basics | What is a function?
+- Relations and functions => relations-and-functions
+- Function notation => function-notation
+- Domain and range => domain-and-range
+### representing-functions | Representing functions
+- Graphs, tables and equations => graphs-tables-equations
+- Arithmetic sequences as functions => arithmetic-sequences
+## linear-functions | Linear functions | Slope, intercepts and the forms of a line.
+### slope | Slope and rate of change
+- Slope and rate of change => slope-and-rate-of-change
+- Slope-intercept form => slope-intercept-form
+### forms-of-lines | Writing linear equations
+- Point-slope form => point-slope-form
+- Standard form => standard-form-line
+- Parallel and perpendicular lines => parallel-perpendicular-lines
+### modeling | Linear models
+- Scatter plots and lines of fit => scatter-plots-lines-of-fit
+- Interpreting linear models => interpreting-linear-models
+## systems | Systems of equations | Solving pairs of linear equations and inequalities.
+### solving-systems | Solving systems
+- Solving systems by graphing => systems-by-graphing
+- Solving systems by substitution => systems-by-substitution
+- Solving systems by elimination => systems-by-elimination
+### applications | Systems in context
+- Modeling with systems of equations => modeling-with-systems
+- Systems of linear inequalities => systems-of-inequalities
+## exponents | Exponents and exponential functions | Exponent rules and exponential growth and decay.
+### exponent-rules | Exponent rules
+- Properties of exponents => properties-of-exponents
+- Zero and negative exponents => zero-negative-exponents
+- Rational exponents and radicals => rational-exponents-radicals
+### exponential-functions | Exponential functions
+- Exponential growth and decay => exponential-growth-decay
+- Comparing linear and exponential models => comparing-linear-exponential
+## polynomials | Polynomials and factoring | Operations on polynomials and factoring techniques.
+### operations | Polynomial operations
+- Adding and subtracting polynomials => adding-subtracting-polynomials
+- Multiplying polynomials => multiplying-polynomials
+### factoring | Factoring
+- Greatest common factor => greatest-common-factor
+- Factoring trinomials => factoring-trinomials
+- Special products and factoring patterns => special-products-factoring
+## quadratics | Quadratic functions and equations | Graphs of parabolas and methods for solving quadratic equations.
+### quadratic-graphs | Graphs of quadratic functions
+- Graphing quadratic functions => quadratic-functions-vertex-form
+- Key features: vertex, axis of symmetry and intercepts => key-features-quadratics
+### solving-quadratics | Solving quadratic equations
+- Solving by factoring => solving-quadratics-factoring
+- Solving with square roots => solving-quadratics-square-roots
+- Completing the square => completing-the-square
+- The quadratic formula and the discriminant => quadratic-formula
+## data | Data analysis | Describing one- and two-variable data.
+### statistics | Describing data
+- Measures of center and spread => measures-center-spread
+- Box plots and histograms => box-plots-histograms
+- Two-way frequency tables => two-way-frequency-tables
+
+@course algebra-1-honors extends algebra-1
+## foundations | Foundations of algebra | The language of algebra: expressions, properties and real numbers.
+### real-numbers | Real numbers
+- Proof with the properties of real numbers => proof-with-properties
+## linear-equations | Linear equations and inequalities | Solving equations and inequalities in one variable and checking solutions.
+### inequalities | Inequalities
+- Reasoning about solution sets => reasoning-solution-sets
+## functions | Functions | Relations, function notation, domain and range.
+### function-transformations | Transformations of functions
+- Transformations of linear and absolute value functions => transformations-linear-absolute-value
+- Piecewise and step functions => piecewise-step-functions
+## exponents | Exponents and exponential functions | Exponent rules and exponential growth and decay.
+### exponential-functions | Exponential functions
+- Geometric sequences and recursive rules => geometric-sequences
+## quadratics | Quadratic functions and equations | Graphs of parabolas and methods for solving quadratic equations.
+### solving-quadratics | Solving quadratic equations
+- Linear-quadratic systems => linear-quadratic-systems
+- Deriving the quadratic formula => deriving-quadratic-formula
+## radicals | Radical expressions and functions | Simplifying radicals and graphing square root functions.
+### radical-expressions | Radical expressions
+- Simplifying radical expressions => simplifying-radicals
+- Operations with radicals => operations-with-radicals
+- Square root and cube root functions => square-root-cube-root-functions
+
+@course geometry
+## foundations | Tools of geometry | Points, lines, planes, measurement and constructions.
+### basics | Basic figures
+- Points, lines and planes => points-lines-planes
+- Measuring segments and angles => measuring-segments-angles
+- Midpoint and distance in the coordinate plane => midpoint-distance
+### constructions | Constructions
+- Compass and straightedge constructions => compass-straightedge-constructions
+## reasoning | Reasoning and proof | Logical statements and proving angle relationships.
+### logic | Logic
+- Inductive and deductive reasoning => inductive-deductive-reasoning
+- Conditional statements => conditional-statements
+### proof | Proof
+- Angle pair relationships => angle-pair-relationships
+- Writing two-column proofs => two-column-proofs
+## parallel-lines | Parallel and perpendicular lines | Angles formed by transversals and slopes of lines.
+### transversals | Transversals
+- Angles formed by parallel lines and a transversal => parallel-lines-transversals
+- Proving lines parallel => proving-lines-parallel
+- Slopes of parallel and perpendicular lines => slopes-parallel-perpendicular-geometry
+## transformations | Transformations | Rigid motions, dilations and symmetry.
+### rigid-motions | Rigid motions
+- Translations => translations
+- Reflections => reflections
+- Rotations => rotations
+- Compositions of transformations => compositions-transformations
+### dilations | Dilations
+- Dilations and scale factor => dilations
+## triangles | Triangles and congruence | Triangle properties and proving congruence.
+### triangle-properties | Triangle properties
+- Triangle angle sum and exterior angles => triangle-angle-sum
+- Isosceles and equilateral triangles => isosceles-equilateral-triangles
+### congruence | Congruence
+- SSS and SAS congruence => sss-sas-congruence
+- ASA, AAS and HL congruence => asa-aas-hl-congruence
+- Using congruent triangles (CPCTC) => cpctc
+### special-segments | Special segments
+- Bisectors, medians and altitudes => bisectors-medians-altitudes
+- Triangle inequalities => triangle-inequalities
+## quadrilaterals | Quadrilaterals | Properties of parallelograms, rectangles, rhombuses and trapezoids.
+### polygons | Polygons
+- Polygon angle sums => polygon-angle-sums
+- Properties of parallelograms => properties-of-parallelograms
+- Rectangles, rhombuses and squares => rectangles-rhombuses-squares
+- Trapezoids and kites => trapezoids-kites
+## similarity | Similarity | Similar figures and proportional reasoning.
+### similar-triangles | Similar triangles
+- Similar polygons => similar-polygons
+- Proving triangles similar => proving-triangles-similar
+- Proportions in triangles => proportions-in-triangles
+## right-triangles | Right triangles and trigonometry | The Pythagorean theorem and trigonometric ratios.
+### pythagorean | The Pythagorean theorem
+- The Pythagorean theorem and its converse => pythagorean-theorem
+- Special right triangles => special-right-triangles
+### trig-ratios | Trigonometric ratios
+- Sine, cosine and tangent ratios => trig-ratios
+- Solving right triangles => solving-right-triangles
+- Angles of elevation and depression => angles-elevation-depression
+## circles | Circles | Arcs, chords, angles and equations of circles.
+### circle-parts | Arcs and angles
+- Arcs and central angles => arcs-central-angles
+- Inscribed angles => inscribed-angles
+- Tangents and chords => tangents-chords
+### circle-measure | Measuring circles
+- Arc length and radian measure => arc-length-radians
+- Sector area => sector-area
+- Equations of circles => equations-of-circles
+## area-volume | Area and volume | Area, surface area and volume of figures and solids.
+### area | Area
+- Areas of polygons => areas-of-polygons
+- Areas of composite figures => composite-figures-area
+### solids | Solids
+- Surface area of prisms, cylinders, pyramids and cones => surface-area-solids
+- Volume of prisms, cylinders, pyramids, cones and spheres => volume-of-solids
+- Cross sections and solids of revolution => cross-sections-revolution
+## probability | Probability | Counting and probability of compound events.
+### counting | Counting and probability
+- Sample spaces and basic probability => sample-spaces-probability
+- Permutations and combinations => permutations-combinations
+- Independent and dependent events => independent-dependent-events
+
+@course geometry-honors extends geometry
+## reasoning | Reasoning and proof | Logical statements and proving angle relationships.
+### proof | Proof
+- Paragraph and flow proofs => paragraph-flow-proofs
+- Indirect proof => indirect-proof
+## triangles | Triangles and congruence | Triangle properties and proving congruence.
+### special-segments | Special segments
+- Points of concurrency => points-of-concurrency
+## similarity | Similarity | Similar figures and proportional reasoning.
+### similar-triangles | Similar triangles
+- Geometric mean in right triangles => geometric-mean-right-triangles
+## right-triangles | Right triangles and trigonometry | The Pythagorean theorem and trigonometric ratios.
+### oblique-triangles | Oblique triangles
+- The Law of Sines => law-of-sines
+- The Law of Cosines => law-of-cosines
+## coordinate-proof | Coordinate geometry | Proving properties of figures with coordinates.
+### coordinate-methods | Coordinate methods
+- Coordinate proofs => coordinate-proofs
+- Partitioning a segment => partitioning-segment
+- Equations of parabolas from focus and directrix => parabola-focus-directrix
+## probability | Probability | Counting and probability of compound events.
+### counting | Counting and probability
+- Conditional probability => conditional-probability
+- Geometric probability => geometric-probability
+
+@course algebra-2
+## functions-review | Functions and transformations | Families of functions and how parameters transform their graphs.
+### parent-functions | Parent functions
+- Parent functions and their graphs => parent-functions
+- Transformations of functions => function-transformations
+- Piecewise-defined functions => piecewise-step-functions
+### operations | Combining functions
+- Operations on functions => operations-on-functions
+- Composition of functions => composition-of-functions
+- Inverse functions => inverse-functions
+## quadratics | Quadratic functions | Forms of quadratics, complex numbers and solving.
+### quadratic-forms | Forms of quadratics
+- Vertex, standard and factored forms => quadratic-forms
+- Modeling with quadratic functions => modeling-quadratics
+### complex-numbers | Complex numbers
+- Imaginary and complex numbers => complex-numbers
+- Solving quadratics with complex solutions => quadratics-complex-solutions
+## polynomials | Polynomial functions | Graphs, division and zeros of polynomials.
+### polynomial-graphs | Polynomial graphs
+- Graphs of polynomial functions => polynomial-graphs
+- End behavior and turning points => end-behavior-turning-points
+### polynomial-algebra | Polynomial algebra
+- Dividing polynomials => dividing-polynomials
+- The Remainder and Factor Theorems => remainder-factor-theorems
+- Finding zeros of polynomials => finding-polynomial-zeros
+## rational | Rational functions | Rational expressions, equations and graphs.
+### rational-expressions | Rational expressions
+- Simplifying rational expressions => simplifying-rational-expressions
+- Adding, subtracting, multiplying and dividing rational expressions => rational-expression-operations
+### rational-functions | Rational functions
+- Graphs of rational functions and asymptotes => rational-function-graphs
+- Solving rational equations => solving-rational-equations
+## radicals | Radical functions | Rational exponents and radical equations.
+### radical-functions | Radical functions
+- Rational exponents => rational-exponents-radicals
+- Graphs of radical functions => square-root-cube-root-functions
+- Solving radical equations => solving-radical-equations
+## exponential-log | Exponential and logarithmic functions | Growth, decay and logarithms.
+### exponential | Exponential functions
+- Exponential growth and decay models => exponential-growth-decay
+- The number e and continuous growth => number-e-continuous-growth
+### logarithms | Logarithms
+- Logarithms as inverses => logarithms-as-inverses
+- Properties of logarithms => properties-of-logarithms
+- Solving exponential and logarithmic equations => exponential-log-equations
+## sequences | Sequences and series | Arithmetic and geometric patterns and their sums.
+### sequences-series | Sequences and series
+- Arithmetic sequences and series => arithmetic-series
+- Geometric sequences and series => geometric-series
+- Sigma notation => sigma-notation
+## trigonometry | Trigonometric functions | Angles in radians, the unit circle and trig graphs.
+### unit-circle | The unit circle
+- Angles and radian measure => arc-length-radians
+- The unit circle => unit-circle
+### trig-graphs | Trigonometric graphs
+- Graphs of sine and cosine => sine-cosine-graphs
+- Amplitude, period and phase shift => amplitude-period-phase
+## statistics | Statistics and probability | Normal distributions, sampling and inference.
+### distributions | Distributions
+- The normal distribution => normal-distribution
+- Sampling and surveys => sampling-surveys
+- Margin of error => margin-of-error
+
+@course algebra-2-honors extends algebra-2
+## polynomials | Polynomial functions | Graphs, division and zeros of polynomials.
+### polynomial-algebra | Polynomial algebra
+- The Fundamental Theorem of Algebra => fundamental-theorem-algebra
+- The Binomial Theorem => binomial-theorem
+## rational | Rational functions | Rational expressions, equations and graphs.
+### rational-functions | Rational functions
+- Slant asymptotes and holes => slant-asymptotes-holes
+## exponential-log | Exponential and logarithmic functions | Growth, decay and logarithms.
+### logarithms | Logarithms
+- Logarithmic scales and modeling data => log-scales-modeling
+## sequences | Sequences and series | Arithmetic and geometric patterns and their sums.
+### sequences-series | Sequences and series
+- Infinite geometric series => infinite-geometric-series
+- Proof by mathematical induction => mathematical-induction
+## trigonometry | Trigonometric functions | Angles in radians, the unit circle and trig graphs.
+### identities | Identities
+- The Pythagorean identity => pythagorean-identity
+- Graphs of tangent and reciprocal functions => tangent-reciprocal-graphs
+## matrices | Matrices | Matrix operations and solving systems.
+### matrix-operations | Matrices
+- Matrix operations => matrix-operations
+- Determinants and inverses => determinants-inverses
+- Solving systems with matrices => matrix-systems

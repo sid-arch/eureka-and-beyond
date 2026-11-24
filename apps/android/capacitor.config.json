@@ -1,0 +1,16 @@
+{
+  "appId": "dev.eurekaandbeyond.app",
+  "appName": "Eureka and Beyond",
+  "webDir": "www",
+  "server": {
+    "url": "https://staging.eureka-and-beyond.pages.dev",
+    "cleartext": false,
+    "errorPath": "offline.html",
+    "allowNavigation": [
+      "staging.eureka-and-beyond.pages.dev"
+    ]
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}

@@ -1,0 +1,434 @@
+# Curriculum outlines — Mathematics (part 2)
+# AP outlines follow the unit structure of the College Board course frameworks
+# (AP Precalculus Units 1–4; AP Statistics Units 1–9; AP Calculus AB Units 1–8,
+# BC Units 1–10). Lesson-level sequencing is our own. Alignment is unverified
+# until a reviewer checks each course against the current official CED.
+
+@course precalculus
+## functions | Functions and their graphs | Analyzing functions, transformations and inverses.
+### analyzing | Analyzing functions
+- Domain, range and intervals of increase and decrease => analyzing-functions
+- Even and odd functions => even-odd-functions
+- Transformations of functions => function-transformations
+### combining | Combining functions
+- Composition of functions => composition-of-functions
+- Inverse functions => inverse-functions
+## polynomial-rational | Polynomial and rational functions | Zeros, end behavior and asymptotes.
+### polynomial | Polynomial functions
+- Polynomial graphs and zeros => polynomial-graphs
+- Dividing polynomials => dividing-polynomials
+### rational | Rational functions
+- Rational functions and asymptotes => rational-function-graphs
+- Polynomial and rational inequalities => polynomial-rational-inequalities
+## exponential-log | Exponential and logarithmic functions | Models of growth and logarithmic equations.
+### exp-log | Exponential and logarithmic functions
+- Exponential functions and models => number-e-continuous-growth
+- Logarithmic functions and properties => properties-of-logarithms
+- Solving exponential and logarithmic equations => exponential-log-equations
+## trigonometry | Trigonometric functions | Angles, the unit circle and graphs.
+### angles | Angles and the unit circle
+- Radian and degree measure => arc-length-radians
+- The unit circle => unit-circle
+- Right-triangle trigonometry => trig-ratios
+### graphs | Graphs of trigonometric functions
+- Graphs of sine and cosine => amplitude-period-phase
+- Graphs of other trigonometric functions => tangent-reciprocal-graphs
+- Inverse trigonometric functions => inverse-trig-functions
+## trig-analytic | Analytic trigonometry | Identities and trigonometric equations.
+### identities | Identities and equations
+- Fundamental identities => fundamental-identities
+- Sum and difference formulas => sum-difference-formulas
+- Double-angle formulas => double-angle-formulas
+- Solving trigonometric equations => solving-trig-equations
+## trig-applications | Applications of trigonometry | Oblique triangles and vectors.
+### oblique | Oblique triangles and vectors
+- The Law of Sines and the Law of Cosines => oblique-triangles
+- Vectors in the plane => vectors-in-plane
+- The dot product => dot-product
+## analytic-geometry | Conic sections and polar coordinates | Parabolas, ellipses, hyperbolas and polar graphs.
+### conics | Conic sections
+- Parabolas => parabola-focus-directrix
+- Ellipses => ellipses
+- Hyperbolas => hyperbolas
+### polar-parametric | Polar and parametric
+- Polar coordinates => polar-coordinates
+- Parametric equations => parametric-equations
+## limits-preview | Introduction to limits | The idea that leads to calculus.
+### limits | Limits
+- Limits from graphs and tables => limits-graphs-tables
+- Rates of change and the tangent line problem => secant-to-tangent
+
+@course precalculus-honors extends precalculus
+## trig-applications | Applications of trigonometry | Oblique triangles and vectors.
+### complex | Complex numbers
+- Complex numbers in polar form => complex-polar-form
+- De Moivre's Theorem => de-moivres-theorem
+## analytic-geometry | Conic sections and polar coordinates | Parabolas, ellipses, hyperbolas and polar graphs.
+### polar-parametric | Polar and parametric
+- Graphs of polar equations => polar-equation-graphs
+## sequences | Sequences, series and induction | Patterns, sums and proof.
+### series | Sequences and series
+- Sequences and summation notation => sigma-notation
+- Infinite series and convergence => infinite-geometric-series
+- Mathematical induction => mathematical-induction
+## matrices | Matrices and linear transformations | Matrices as functions on the plane.
+### matrices | Matrices
+- Matrix operations and inverses => matrix-operations
+- Matrices as transformations of the plane => matrices-transformations
+## limits-preview | Introduction to limits | The idea that leads to calculus.
+### limits | Limits
+- Evaluating limits algebraically => evaluating-limits-algebraically
+- Continuity => continuity
+
+@course ap-precalculus
+## unit-1 | Unit 1: Polynomial and rational functions | Rates of change, polynomial and rational functions, and modeling.
+### change | Change in tandem
+- Change in tandem => change-in-tandem
+- Rates of change => secant-to-tangent
+- Rates of change in linear and quadratic functions => rates-change-linear-quadratic
+### polynomials | Polynomial functions
+- Polynomial functions and rates of change => polynomial-rates-of-change
+- Polynomial functions and complex zeros => fundamental-theorem-algebra
+- Polynomial functions and end behavior => end-behavior-turning-points
+### rational | Rational functions
+- Rational functions and end behavior => rational-end-behavior
+- Rational functions and zeros => rational-zeros-sign
+- Rational functions and vertical asymptotes => rational-function-graphs
+- Rational functions and holes => slant-asymptotes-holes
+### transformations-modeling | Transformations and models
+- Equivalent representations of polynomial and rational expressions => equivalent-representations
+- Transformations of functions => function-transformations
+- Function model selection and assumption articulation => function-model-selection
+- Function model construction and application => function-model-construction
+## unit-2 | Unit 2: Exponential and logarithmic functions | Sequences, exponential and logarithmic functions, and semi-log plots.
+### sequences-exponential | Sequences and exponential functions
+- Change in arithmetic and geometric sequences => geometric-series
+- Change in linear and exponential functions => comparing-linear-exponential
+- Exponential functions and manipulation => exponential-manipulation
+- Exponential function context and data modeling => exponential-data-modeling
+### inverses-logs | Composition, inverses and logarithms
+- Composition of functions => composition-of-functions
+- Inverse functions => inverse-functions
+- Logarithmic expressions and functions => logarithms-as-inverses
+- Inverses of exponential functions => inverses-exponential-functions
+### log-modeling | Logarithmic modeling
+- Logarithmic function manipulation => properties-of-logarithms
+- Exponential and logarithmic equations and inequalities => exponential-log-equations
+- Logarithmic function context and data modeling => log-data-modeling
+- Semi-log plots => log-scales-modeling
+## unit-3 | Unit 3: Trigonometric and polar functions | Periodic phenomena, trig functions and polar graphs.
+### periodic | Periodic phenomena
+- Periodic phenomena => periodic-phenomena
+- Sine, cosine and tangent => sine-cosine-tangent
+- Sine and cosine function values => unit-circle
+- Sine and cosine function graphs => sine-cosine-graphs
+### sinusoidal | Sinusoidal functions
+- Sinusoidal functions => sinusoidal-functions
+- Sinusoidal function transformations => amplitude-period-phase
+- Sinusoidal function context and data modeling => sinusoidal-data-modeling
+### trig-equations | Tangent, inverses and identities
+- The tangent function => tangent-reciprocal-graphs
+- Inverse trigonometric functions => inverse-trig-functions
+- Trigonometric equations and inequalities => solving-trig-equations
+- The secant, cosecant and cotangent functions => secant-cosecant-cotangent
+- Equivalent representations of trigonometric functions => fundamental-identities
+### polar | Polar functions
+- Trigonometry and polar coordinates => polar-coordinates
+- Polar function graphs => polar-equation-graphs
+- Rates of change in polar functions => polar-rates-of-change
+## unit-4 | Unit 4: Functions involving parameters, vectors and matrices | Additional topics not assessed on the AP Exam.
+### parametric | Parametric and implicit functions
+- Parametric functions and planar motion => parametric-equations
+- Implicitly defined functions and conic sections => ellipses
+### vectors-matrices | Vectors and matrices
+- Vectors and vector-valued functions => vectors-in-plane
+- Matrices, inverses and determinants => determinants-inverses
+- Linear transformations and matrices => matrices-transformations
+
+@course statistics
+## data-one-variable | Exploring one-variable data | Displaying and summarizing distributions.
+### displays | Displaying data
+- Types of data and variables => types-of-data
+- Bar charts, histograms and dot plots => displaying-data
+- Describing shape, center and spread => describing-distributions
+### summaries | Numerical summaries
+- Mean, median and standard deviation => measures-center-spread
+- Box plots, quartiles and outliers => box-plots-histograms
+- Comparing distributions => comparing-distributions
+## normal-models | Normal models | z-scores and the normal distribution.
+### normal | The normal distribution
+- z-scores and percentiles => z-scores-percentiles
+- The normal distribution => normal-distribution
+## data-two-variable | Two-variable data | Scatterplots, correlation and regression.
+### association | Association
+- Scatterplots and association => scatter-plots-lines-of-fit
+- Correlation => correlation
+### regression | Regression
+- Least-squares regression lines => least-squares-regression
+- Residuals => residuals
+## collecting-data | Collecting data | Sampling, surveys and experiments.
+### sampling | Sampling and studies
+- Populations, samples and bias => sampling-surveys
+- Sampling methods => sampling-methods
+- Observational studies and experiments => observational-studies-experiments
+- Designing experiments => designing-experiments
+## probability | Probability | Rules of probability and simulation.
+### probability-rules | Probability rules
+- Simulation and the law of large numbers => law-of-large-numbers
+- Addition and multiplication rules => probability-rules
+- Conditional probability and independence => conditional-probability
+## random-variables | Random variables | Discrete and binomial distributions.
+### discrete | Discrete random variables
+- Expected value and spread of a random variable => expected-value-random-variables
+- Binomial distributions => binomial-distributions
+## inference-intro | Introduction to inference | Sampling distributions and confidence.
+### inference | Inference
+- Sampling distributions => sampling-distributions
+- Confidence intervals for a proportion => confidence-intervals-proportion
+- The idea of a significance test => significance-test-idea
+
+@course statistics-honors extends statistics
+## random-variables | Random variables | Discrete and binomial distributions.
+### discrete | Discrete random variables
+- Combining random variables => combining-random-variables
+- Geometric distributions => geometric-distributions
+## inference-intro | Introduction to inference | Sampling distributions and confidence.
+### inference | Inference
+- Confidence intervals for a mean => confidence-intervals-mean
+- Significance tests for a proportion => significance-tests-proportion
+- Errors and power in significance tests => errors-and-power
+## two-sample | Comparing groups | Inference for two proportions and two means.
+### comparing | Comparing two groups
+- Comparing two proportions => comparing-two-proportions
+- Comparing two means => comparing-two-means
+
+@course ap-statistics
+## unit-1 | Unit 1: Exploring one-variable data | Representing and describing distributions of data.
+### categorical | Categorical data
+- Introducing statistics: variation and data => types-of-data
+- Representing a categorical variable with tables and graphs => categorical-data-displays
+### quantitative | Quantitative data
+- Representing a quantitative variable with graphs => displaying-data
+- Describing the distribution of a quantitative variable => describing-distributions
+- Summary statistics for a quantitative variable => measures-center-spread
+- Graphical representations of summary statistics => box-plots-histograms
+- Comparing distributions of a quantitative variable => comparing-distributions
+### normal | The normal distribution
+- The normal distribution => normal-distribution
+## unit-2 | Unit 2: Exploring two-variable data | Relationships between two variables.
+### two-categorical | Two categorical variables
+- Representing two categorical variables => two-way-frequency-tables
+- Statistics for two categorical variables => categorical-association
+### two-quantitative | Two quantitative variables
+- Representing the relationship between two quantitative variables => scatter-plots-lines-of-fit
+- Correlation => correlation
+- Linear regression models and residuals => residuals
+- The least-squares regression line => least-squares-regression
+- Analyzing departures from linearity => departures-from-linearity
+## unit-3 | Unit 3: Collecting data | Planning studies, sampling and experiments.
+### studies | Planning a study
+- Introducing statistics: do the data we collected tell the truth? => observational-studies-experiments
+- Introduction to planning a study => sampling-surveys
+- Random sampling and data collection => sampling-methods
+- Potential problems with sampling => sampling-bias
+- Introduction to experimental design => designing-experiments
+- Selecting an experimental design => experimental-design-selection
+- Inference and experiments => inference-and-experiments
+## unit-4 | Unit 4: Probability, random variables and probability distributions | Probability rules and random variables.
+### probability | Probability
+- Estimating probabilities using simulation => law-of-large-numbers
+- Introduction to probability => sample-spaces-probability
+- Mutually exclusive events => probability-rules
+- Conditional probability => conditional-probability
+- Independent events and unions of events => independent-dependent-events
+### random-variables | Random variables
+- Introduction to random variables and probability distributions => random-variable-distributions
+- Mean and standard deviation of random variables => expected-value-random-variables
+- Combining random variables => combining-random-variables
+- Introduction to the binomial distribution => binomial-distributions
+- Parameters for a binomial distribution => binomial-parameters
+- The geometric distribution => geometric-distributions
+## unit-5 | Unit 5: Sampling distributions | Variation in statistics from sample to sample.
+### sampling-distributions | Sampling distributions
+- The normal distribution, revisited => z-scores-percentiles
+- The Central Limit Theorem => central-limit-theorem
+- Biased and unbiased point estimates => point-estimates-bias
+- Sampling distributions for sample proportions => sampling-distributions
+- Sampling distributions for differences in sample proportions => sampling-dist-diff-proportions
+- Sampling distributions for sample means => sampling-distribution-means
+- Sampling distributions for differences in sample means => sampling-dist-diff-means
+## unit-6 | Unit 6: Inference for categorical data: proportions | Confidence intervals and tests for proportions.
+### one-proportion | One proportion
+- Constructing a confidence interval for a population proportion => confidence-intervals-proportion
+- Justifying a claim based on a confidence interval => justifying-claims-intervals
+- Setting up a test for a population proportion => significance-test-idea
+- Carrying out a test for a population proportion => significance-tests-proportion
+- Potential errors when performing tests => errors-and-power
+### two-proportions | Two proportions
+- Confidence intervals for the difference of two proportions => comparing-two-proportions
+- Testing for a difference in two population proportions => two-proportion-z-test
+## unit-7 | Unit 7: Inference for quantitative data: means | t-procedures for one and two means.
+### means | Inference for means
+- Introducing statistics: should I worry about error? => t-distributions
+- Constructing a confidence interval for a population mean => confidence-intervals-mean
+- Carrying out a test for a population mean => t-test-mean
+- Confidence intervals for the difference of two means => comparing-two-means
+- Carrying out a test for the difference of two population means => two-sample-t-test
+## unit-8 | Unit 8: Inference for categorical data: chi-square | Goodness of fit, homogeneity and independence.
+### chi-square | Chi-square tests
+- The chi-square goodness of fit test => chi-square-goodness-of-fit
+- Expected counts in two-way tables => expected-counts-two-way
+- The chi-square test for homogeneity => chi-square-homogeneity
+- The chi-square test for independence => chi-square-independence
+## unit-9 | Unit 9: Inference for quantitative data: slopes | Inference about the slope of a regression line.
+### slopes | Inference for slopes
+- Confidence intervals for the slope of a regression model => slope-confidence-interval
+- Carrying out a test for the slope of a regression model => slope-t-test
+
+@course ap-calculus-ab
+## unit-1 | Unit 1: Limits and continuity | Limits, their properties and continuity.
+### limits | Limits
+- Introducing calculus: can change occur at an instant? => secant-to-tangent
+- Defining limits and using limit notation => limit-definition-notation
+- Estimating limits from graphs and tables => limits-graphs-tables
+- Determining limits using algebraic properties and manipulation => evaluating-limits-algebraically
+- Selecting procedures for determining limits => selecting-limit-procedures
+- The Squeeze Theorem => squeeze-theorem
+### continuity | Continuity and asymptotes
+- Types of discontinuities => continuity
+- Defining continuity at a point and over an interval => continuity-intervals
+- Removing discontinuities => removing-discontinuities
+- Infinite limits and vertical asymptotes => infinite-limits
+- Limits at infinity and horizontal asymptotes => limits-at-infinity
+- The Intermediate Value Theorem => intermediate-value-theorem
+## unit-2 | Unit 2: Differentiation: definition and fundamental properties | The derivative and basic rules.
+### definition | The derivative
+- Defining average and instantaneous rates of change => average-instantaneous-rates
+- Defining the derivative of a function and using derivative notation => derivative-definition
+- Estimating derivatives at a point => estimating-derivatives
+- Connecting differentiability and continuity => differentiability-continuity
+### rules | Derivative rules
+- The Power Rule => power-rule
+- Derivative rules: constant, sum, difference and constant multiple => basic-derivative-rules
+- Derivatives of cos x, sin x, eˣ and ln x => derivatives-sin-cos-exp-ln
+- The Product Rule => product-rule
+- The Quotient Rule => quotient-rule
+- Derivatives of tangent, cotangent, secant and cosecant => trig-derivatives-tan-sec
+## unit-3 | Unit 3: Differentiation: composite, implicit and inverse functions | The chain rule and its consequences.
+### chain | Chain rule and beyond
+- The Chain Rule => chain-rule
+- Implicit differentiation => implicit-differentiation
+- Differentiating inverse functions => inverse-function-derivatives
+- Differentiating inverse trigonometric functions => inverse-trig-derivatives
+- Selecting procedures for calculating derivatives => selecting-derivative-procedures
+- Calculating higher-order derivatives => higher-order-derivatives
+## unit-4 | Unit 4: Contextual applications of differentiation | Derivatives in motion, related rates and approximation.
+### contextual | Derivatives in context
+- Interpreting the meaning of the derivative in context => derivative-in-context
+- Straight-line motion: connecting position, velocity and acceleration => straight-line-motion
+- Rates of change in applied contexts other than motion => applied-rates-of-change
+- Introduction to related rates => related-rates-intro
+- Solving related rates problems => solving-related-rates
+- Approximating values of a function using local linearity and linearization => linearization
+- Using L'Hospital's Rule for determining limits of indeterminate forms => lhospitals-rule
+## unit-5 | Unit 5: Analytical applications of differentiation | What derivatives reveal about graphs and optimization.
+### theorems | Mean Value and Extreme Value theorems
+- Using the Mean Value Theorem => mean-value-theorem
+- The Extreme Value Theorem, global versus local extrema, and critical points => extreme-value-critical-points
+### graph-analysis | Analyzing graphs
+- Determining intervals on which a function is increasing or decreasing => increasing-decreasing-intervals
+- Using the First Derivative Test to determine relative extrema => first-derivative-test
+- Using the Candidates Test to determine absolute extrema => candidates-test
+- Determining concavity of functions over their domains => concavity-inflection
+- Using the Second Derivative Test to determine extrema => second-derivative-test
+- Sketching graphs of functions and their derivatives => sketching-f-and-derivative
+- Connecting a function, its first derivative and its second derivative => connecting-f-derivatives
+### optimization | Optimization and implicit relations
+- Introduction to optimization problems => optimization-intro
+- Solving optimization problems => solving-optimization
+- Exploring behaviors of implicit relations => implicit-relations-behavior
+## unit-6 | Unit 6: Integration and accumulation of change | Definite integrals and the Fundamental Theorem.
+### accumulation | Accumulation and Riemann sums
+- Exploring accumulations of change => accumulation-of-change
+- Approximating areas with Riemann sums => riemann-sums
+- Riemann sums, summation notation and definite integral notation => riemann-sums-notation
+### ftc | The Fundamental Theorem of Calculus
+- The Fundamental Theorem of Calculus and accumulation functions => ftc-accumulation-functions
+- Interpreting the behavior of accumulation functions involving area => interpreting-accumulation
+- Applying properties of definite integrals => definite-integral-properties
+- The Fundamental Theorem of Calculus and definite integrals => ftc-definite-integrals
+### antiderivatives | Antiderivatives
+- Finding antiderivatives and indefinite integrals: basic rules and notation => antiderivatives-basic
+- Integrating using substitution => u-substitution
+- Integrating functions using long division and completing the square => integration-division-completing-square
+- Selecting techniques for antidifferentiation => selecting-antidifferentiation
+## unit-7 | Unit 7: Differential equations | Modeling with and solving differential equations.
+### differential-equations | Differential equations
+- Modeling situations with differential equations => modeling-differential-equations
+- Verifying solutions for differential equations => verifying-de-solutions
+- Sketching slope fields => sketching-slope-fields
+- Reasoning using slope fields => reasoning-slope-fields
+- Finding general solutions using separation of variables => separation-of-variables
+- Finding particular solutions using initial conditions and separation of variables => particular-solutions
+- Exponential models with differential equations => exponential-models-de
+## unit-8 | Unit 8: Applications of integration | Average value, motion, area and volume.
+### applications | Applications
+- Finding the average value of a function on an interval => average-value
+- Connecting position, velocity and acceleration of functions using integrals => motion-with-integrals
+- Using accumulation functions and definite integrals in applied contexts => accumulation-applied
+### area | Area
+- Finding the area between curves expressed as functions of x => area-between-curves-x
+- Finding the area between curves expressed as functions of y => area-between-curves-y
+- Finding the area between curves that intersect at more than two points => area-multiple-intersections
+### volume | Volume
+- Volumes with cross sections: squares and rectangles => cross-sections-squares
+- Volumes with cross sections: triangles and semicircles => cross-sections-triangles
+- Volume with disc method: revolving around the x- or y-axis => disc-method
+- Volume with disc method: revolving around other axes => disc-method-other-axes
+- Volume with washer method: revolving around the x- or y-axis => washer-method
+- Volume with washer method: revolving around other axes => washer-method-other-axes
+
+@course ap-calculus-bc extends ap-calculus-ab
+## unit-6 | Unit 6: Integration and accumulation of change | Definite integrals and the Fundamental Theorem.
+### antiderivatives | Antiderivatives
+- Integrating using integration by parts => integration-by-parts
+- Using linear partial fractions => partial-fractions
+- Evaluating improper integrals => improper-integrals
+## unit-7 | Unit 7: Differential equations | Modeling with and solving differential equations.
+### differential-equations | Differential equations
+- Approximating solutions using Euler's method => eulers-method
+- Logistic models with differential equations => logistic-models
+## unit-8 | Unit 8: Applications of integration | Average value, motion, area and volume.
+### arc-length | Arc length
+- The arc length of a smooth, planar curve and distance traveled => arc-length
+## unit-9 | Unit 9: Parametric equations, polar coordinates and vector-valued functions | Calculus for curves in the plane.
+### parametric | Parametric equations
+- Defining and differentiating parametric equations => parametric-derivatives
+- Second derivatives of parametric equations => parametric-second-derivatives
+- Finding arc lengths of curves given by parametric equations => parametric-arc-length
+### vector-valued | Vector-valued functions
+- Defining and differentiating vector-valued functions => vector-valued-derivatives
+- Integrating vector-valued functions => vector-valued-integrals
+- Solving motion problems using parametric and vector-valued functions => parametric-vector-motion
+### polar | Polar coordinates
+- Defining polar coordinates and differentiating in polar form => polar-differentiation
+- Finding the area of a polar region or the area bounded by a single polar curve => polar-area
+- Finding the area of the region bounded by two polar curves => polar-area-two-curves
+## unit-10 | Unit 10: Infinite sequences and series | Convergence tests, Taylor polynomials and power series.
+### convergence | Convergence
+- Defining convergent and divergent infinite series => convergent-divergent-series
+- Working with geometric series => infinite-geometric-series
+- The nth term test for divergence => nth-term-test
+- Integral test for convergence => integral-test
+- Harmonic series and p-series => p-series-harmonic
+- Comparison tests for convergence => comparison-tests
+- Alternating series test for convergence => alternating-series-test
+- Ratio test for convergence => ratio-test
+- Determining absolute or conditional convergence => absolute-conditional-convergence
+- Alternating series error bound => alternating-error-bound
+### taylor | Taylor and power series
+- Finding Taylor polynomial approximations of functions => taylor-polynomial-approximations
+- Lagrange error bound => lagrange-error-bound
+- Radius and interval of convergence of power series => radius-interval-convergence
+- Finding Taylor or Maclaurin series for a function => taylor-maclaurin-series
+- Representing functions as power series => power-series-representations

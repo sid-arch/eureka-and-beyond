@@ -1,0 +1,8 @@
+APP_ENV=development
+PUBLIC_SITE_URL=http://localhost:8787
+MAIL_DRIVER=log
+# Production secrets (set with: npx wrangler pages secret put NAME --project-name eureka-and-beyond)
+# RESEND_API_KEY=         # enables sign-up, verification and password-reset emails
+# EMAIL_FROM=             # verified sender, e.g. "Eureka and Beyond <no-reply@yourdomain>"
+# TURNSTILE_SITE_KEY=     # optional bot protection on public forms
+# TURNSTILE_SECRET_KEY=

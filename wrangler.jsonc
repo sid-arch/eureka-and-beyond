@@ -1,0 +1,41 @@
+{
+  // Eureka and Beyond on Cloudflare Pages.
+  //   Production: https://eureka-and-beyond.pages.dev  (branch "main", top-level config)
+  //   Staging:    https://staging.eureka-and-beyond.pages.dev  (branch "staging", env.preview)
+  // Staging has its own database, so testing never touches production data.
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "eureka-and-beyond",
+  "pages_build_output_dir": "./dist",
+  "compatibility_date": "2026-11-01",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "eureka-db",
+      "database_id": "7f18d25b-e002-4ca1-b9b6-727e3c63ecae",
+      "migrations_dir": "migrations"
+    }
+  ],
+  "vars": {
+    "APP_ENV": "production",
+    "PUBLIC_SITE_URL": "https://eureka-and-beyond.pages.dev"
+    // Email: set RESEND_API_KEY and EMAIL_FROM as secrets to enable sign-up and resets.
+  },
+  "env": {
+    "preview": {
+      "d1_databases": [
+        {
+          "binding": "DB",
+          "database_name": "eureka-db-staging",
+          "database_id": "5417f79b-aa8a-4a69-a7fe-197e827c6d10",
+          "migrations_dir": "migrations"
+        }
+      ],
+      "vars": {
+        "APP_ENV": "staging",
+        "PUBLIC_SITE_URL": "https://staging.eureka-and-beyond.pages.dev",
+        // Staging stores emails in the email_outbox table instead of sending them.
+        "MAIL_DRIVER": "log"
+      }
+    }
+  }
+}

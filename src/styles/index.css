@@ -1,0 +1,234 @@
+@import "tailwindcss";
+@import "@fontsource-variable/bricolage-grotesque/index.css";
+@import "@fontsource-variable/figtree/index.css";
+@import "katex/dist/katex.min.css";
+
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+/*
+  Eureka and Beyond design system, v2
+  ───────────────────────────────────
+  Light-first, bright and lab-like. Each subject owns one accent color, used for
+  its marks, active states and simulation strokes. The primary blue is for
+  actions and links everywhere else.
+
+  canvas   #F7F9FC  page background
+  ink      #17233B  primary text
+  primary  #4169E1  actions, links, focus
+  math     #6654E8  Mathematics
+  physics  #0E9F9A  Physics
+  chem     #F08B43  Chemistry
+  success  #20A477  correct answers, completion
+*/
+@theme {
+  --font-display: "Bricolage Grotesque Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "Figtree Variable", ui-sans-serif, system-ui, sans-serif;
+
+  --color-canvas: var(--canvas);
+  --color-surface: var(--surface);
+  --color-sunken: var(--sunken);
+  --color-ink: var(--ink);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-primary: var(--primary);
+  --color-primary-ink: var(--primary-ink);
+  --color-primary-soft: var(--primary-soft);
+  --color-math: var(--math);
+  --color-math-soft: var(--math-soft);
+  --color-physics: var(--physics);
+  --color-physics-soft: var(--physics-soft);
+  --color-chem: var(--chem);
+  --color-chem-soft: var(--chem-soft);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+
+  --text-xs: 0.8125rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.3125rem;
+  --text-2xl: 1.625rem;
+  --text-3xl: 2.0625rem;
+  --text-4xl: 2.625rem;
+  --text-5xl: 3.375rem;
+
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  --shadow-card: 0 1px 2px rgb(23 35 59 / 0.05), 0 2px 8px -2px rgb(23 35 59 / 0.06);
+  --shadow-lift: 0 2px 4px rgb(23 35 59 / 0.05), 0 12px 28px -10px rgb(23 35 59 / 0.16);
+}
+
+:root {
+  --canvas: #f7f9fc;
+  --surface: #ffffff;
+  --sunken: #eef2f8;
+  --ink: #17233b;
+  --muted: #56627a;
+  --line: #e1e6ef;
+  --primary: #4169e1;
+  --primary-ink: #2f55c9;
+  --primary-soft: #e9eefc;
+  --math: #6654e8;
+  --math-soft: #efedfd;
+  --physics: #0e9f9a;
+  --physics-soft: #e3f5f4;
+  --chem: #f08b43;
+  --chem-soft: #fdf0e6;
+  --success: #20a477;
+  --success-soft: #e3f5ee;
+  --danger: #d1435b;
+  --danger-soft: #fbeaed;
+  --warning: #b7791f;
+  --warning-soft: #fdf3e1;
+  color-scheme: light;
+}
+
+[data-theme="dark"] {
+  --canvas: #0d1424;
+  --surface: #141d31;
+  --sunken: #0f1729;
+  --ink: #e7ecf6;
+  --muted: #a1abc2;
+  --line: #24304a;
+  --primary: #7b9bf2;
+  --primary-ink: #9db4f6;
+  --primary-soft: #1c2950;
+  --math: #9a8ef5;
+  --math-soft: #241f4d;
+  --physics: #35c4be;
+  --physics-soft: #10312f;
+  --chem: #f5a56b;
+  --chem-soft: #3a2614;
+  --success: #3cc792;
+  --success-soft: #11322a;
+  --danger: #f07a8d;
+  --danger-soft: #3a1a22;
+  --warning: #e3ad5a;
+  --warning-soft: #33280f;
+  --shadow-card: 0 1px 2px rgb(0 0 0 / 0.3);
+  --shadow-lift: 0 12px 28px -10px rgb(0 0 0 / 0.5);
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    background: var(--canvas);
+    color: var(--ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    font-size: var(--text-base);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 650;
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+  p { text-wrap: pretty; }
+  :focus-visible {
+    outline: 2.5px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: 6px;
+  }
+  ::selection { background: var(--primary-soft); }
+  input, textarea, select { font: inherit; }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer components {
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+  }
+  /* Horizontal scroll cue: edge shadows appear only where content is cut off. */
+  .scroll-x-hint {
+    overflow-x: auto;
+    background:
+      linear-gradient(to right, var(--surface) 30%, transparent) left / 1.5rem 100% no-repeat local,
+      linear-gradient(to left, var(--surface) 30%, transparent) right / 1.5rem 100% no-repeat local,
+      radial-gradient(farthest-side at 0 50%, color-mix(in srgb, var(--ink) 22%, transparent), transparent) left / 0.6rem 100% no-repeat scroll,
+      radial-gradient(farthest-side at 100% 50%, color-mix(in srgb, var(--ink) 22%, transparent), transparent) right / 0.6rem 100% no-repeat scroll;
+  }
+  .prose-lesson {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+    max-width: 70ch;
+  }
+  .prose-lesson p + p { margin-top: 0.9em; }
+  .link {
+    color: var(--primary-ink);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 3px;
+  }
+  .link:hover { text-decoration-thickness: 2px; }
+  .grid-paper {
+    background-image:
+      linear-gradient(var(--line) 1px, transparent 1px),
+      linear-gradient(90deg, var(--line) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .katex { font-size: 1.06em; }
+  :not(.katex-display) > .katex { white-space: nowrap; }
+  .katex-display { margin: 0; overflow-x: auto; overflow-y: hidden; padding: 0.2rem 0; }
+  .math-left .katex-display, .math-left .katex-display > .katex { text-align: left; }
+
+  input[type="range"].range {
+    appearance: none;
+    width: 100%;
+    height: 22px;
+    background: transparent;
+    accent-color: var(--accent, var(--primary));
+    cursor: pointer;
+  }
+  input[type="range"].range::-webkit-slider-runnable-track { height: 6px; border-radius: 999px; background: var(--sunken); }
+  input[type="range"].range::-moz-range-track { height: 6px; border-radius: 999px; background: var(--sunken); }
+  input[type="range"].range::-webkit-slider-thumb {
+    appearance: none; width: 20px; height: 20px; margin-top: -7px; border-radius: 999px;
+    background: var(--surface); border: 3px solid var(--accent, var(--primary)); box-shadow: var(--shadow-card);
+  }
+  input[type="range"].range::-moz-range-thumb {
+    width: 16px; height: 16px; border-radius: 999px; background: var(--surface); border: 3px solid var(--accent, var(--primary));
+  }
+}
+
+
+/* Touch screens: larger slider thumbs and hit areas, no double-tap zoom delay on controls. */
+@media (pointer: coarse) {
+  input[type="range"].range { height: 40px; }
+  input[type="range"].range::-webkit-slider-thumb { width: 28px; height: 28px; margin-top: -11px; }
+  input[type="range"].range::-moz-range-thumb { width: 24px; height: 24px; }
+  button, a, input, select, label { touch-action: manipulation; }
+}
+
+/* Phones and tablets: keep a simulation's picture in view while its controls scroll underneath. */
+@media (max-width: 1023px) and (min-height: 560px) {
+  .sim-visual { position: sticky; top: 4rem; z-index: 5; max-height: 48vh; overflow: hidden; }
+  .sim-visual > div { max-height: 48vh; }
+  .sim-visual svg { max-height: 48vh; width: auto; max-width: 100%; margin-inline: auto; }
+}
+
+.menu-drop { animation: menu-drop 180ms ease-out both; }
+@keyframes menu-drop { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }

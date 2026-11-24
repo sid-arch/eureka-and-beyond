@@ -1,0 +1,121 @@
+# Builds the desktop and Android apps.
+# - Run it by hand from the Actions tab ("Build apps"); you can override the site URL the apps open.
+# - Push a tag like v1.0.0 to build all three and attach them to a GitHub Release.
+# Optional repository secrets (Settings > Secrets and variables > Actions):
+#   ANDROID_KEYSTORE_BASE64, ANDROID_KEYSTORE_PASSWORD  sign the Android APK with your release key
+#   APPLE_CERTIFICATE, APPLE_CERTIFICATE_PASSWORD, APPLE_SIGNING_IDENTITY,
+#   APPLE_ID, APPLE_PASSWORD, APPLE_TEAM_ID              sign and notarize the macOS app
+# Without them the apps still build: the APK is signed with a throwaway debug key, and the
+# macOS and Windows apps are unsigned (users see a one-time security prompt).
+name: Build apps
+
+on:
+  workflow_dispatch:
+    inputs:
+      app_url:
+        description: "Site the apps open (https). Leave empty to use apps/app-config.json."
+        required: false
+        default: ""
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+env:
+  APP_URL: ${{ inputs.app_url }}
+
+jobs:
+  macos:
+    name: macOS (.dmg)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - uses: dtolnay/rust-toolchain@stable
+        with: { targets: "aarch64-apple-darwin,x86_64-apple-darwin" }
+      - name: Install and build
+        working-directory: apps/desktop
+        env:
+          APPLE_CERTIFICATE: ${{ secrets.APPLE_CERTIFICATE }}
+          APPLE_CERTIFICATE_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+          APPLE_SIGNING_IDENTITY: ${{ secrets.APPLE_SIGNING_IDENTITY }}
+          APPLE_ID: ${{ secrets.APPLE_ID }}
+          APPLE_PASSWORD: ${{ secrets.APPLE_PASSWORD }}
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+        run: |
+          npm install --no-audit --no-fund
+          npm run prepare-web
+          npx tauri build --target universal-apple-darwin --bundles dmg
+          mkdir -p ../../out && cp src-tauri/target/universal-apple-darwin/release/bundle/dmg/*.dmg ../../out/Eureka-and-Beyond-macOS-universal.dmg
+      - uses: actions/upload-artifact@v4
+        with: { name: macos-dmg, path: out/*.dmg }
+
+  windows:
+    name: Windows (.exe)
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - uses: dtolnay/rust-toolchain@stable
+      - name: Install and build
+        working-directory: apps/desktop
+        shell: bash
+        run: |
+          npm install --no-audit --no-fund
+          npm run prepare-web
+          npx tauri build --bundles nsis
+          mkdir -p ../../out && cp src-tauri/target/release/bundle/nsis/*-setup.exe ../../out/Eureka-and-Beyond-Windows-x64-setup.exe
+      - uses: actions/upload-artifact@v4
+        with: { name: windows-exe, path: out/*.exe }
+
+  android:
+    name: Android (.apk)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: "21" }
+      - name: Install and sync
+        working-directory: apps/android
+        run: |
+          npm install --no-audit --no-fund
+          npm run sync
+      - name: Build APK
+        working-directory: apps/android/android
+        env:
+          KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+        run: |
+          chmod +x gradlew
+          mkdir -p ../../../out
+          BT="$ANDROID_HOME/build-tools/$(ls "$ANDROID_HOME/build-tools" | sort -V | tail -1)"
+          if [ -n "$KEYSTORE_B64" ]; then
+            ./gradlew assembleRelease --no-daemon
+            echo "$KEYSTORE_B64" | base64 -d > release.jks
+            "$BT/zipalign" -f -p 4 app/build/outputs/apk/release/app-release-unsigned.apk aligned.apk
+            "$BT/apksigner" sign --ks release.jks --ks-key-alias eureka --ks-pass env:KEYSTORE_PASSWORD --key-pass env:KEYSTORE_PASSWORD --out ../../../out/Eureka-and-Beyond-Android.apk aligned.apk
+            rm release.jks
+          else
+            ./gradlew assembleDebug --no-daemon
+            cp app/build/outputs/apk/debug/app-debug.apk ../../../out/Eureka-and-Beyond-Android-test.apk
+          fi
+      - uses: actions/upload-artifact@v4
+        with: { name: android-apk, path: out/*.apk }
+
+  release:
+    name: GitHub Release
+    if: startsWith(github.ref, 'refs/tags/v')
+    needs: [macos, windows, android]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with: { path: dist, merge-multiple: true }
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: dist/*
+          generate_release_notes: true
