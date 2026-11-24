@@ -45,6 +45,10 @@ jobs:
           APPLE_PASSWORD: ${{ secrets.APPLE_PASSWORD }}
           APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
         run: |
+          # Without an Apple certificate, build unsigned (Tauri tries to sign if these are set, even empty).
+          for v in APPLE_CERTIFICATE APPLE_CERTIFICATE_PASSWORD APPLE_SIGNING_IDENTITY APPLE_ID APPLE_PASSWORD APPLE_TEAM_ID; do
+            [ -z "${!v}" ] && unset "$v"
+          done
           npm install --no-audit --no-fund
           npm run prepare-web
           npx tauri build --target universal-apple-darwin --bundles dmg
